@@ -15,7 +15,7 @@
         font-weight: 400;
         font-style: normal;
     }
-    .h1,h2,h3,h4,.heading {
+    h1,h2,.heading {
         font-family: "Space Grotesk", sans-serif;
         font-optical-sizing: auto;
         font-weight: 700;
@@ -26,25 +26,42 @@
 <body class="m-0 p-8 h-full ">
     <nav class="relative">
         <ul class="flex gap-4 absolute right-0">
-            <li><a href="index.html" class="hover:bg-gray-900 hover:text-white p-2 rounded-lg">Home</a></li>
-            <li><a href="#" class="hover:bg-gray-900 hover:text-white p-2 rounded-lg">About</a></li>
-            <li><a href="explore.html" class="hover:bg-gray-900 hover:text-white p-2 rounded-lg">Explore</a></li>
-            <li><a href="contact.html" class="hover:bg-gray-900 hover:text-white p-2 rounded-lg">Contact</a></li>
+            <li><a href="index.html" class="hover:bg-gray-900 hover:text-white p-2 rounded-lg transition">Home</a></li>
+            <li><a href="#" class="hover:bg-gray-900 hover:text-white p-2 rounded-lg transition">About</a></li>
+            <li><a href="explore.html" class="hover:bg-gray-900 hover:text-white p-2 rounded-lg transition">Explore</a></li>
+            <li><a href="contact.html" class="hover:bg-gray-900 hover:text-white p-2 rounded-lg transition">Contact</a></li>
         </ul>
     </nav>
-    <main class="flex flex-col">
-        <div class="flex flex-col md:flex-row">
-            <div></div>
+    <main class="flex flex-col items-center mt-16 gap-16">
+        <div class="flex flex-col md:flex-row md:gap-0 gap-8">
+            <div class="max-w-xl flex flex-col items-center gap-4 md:border-r md:border-gray-200 md:pr-8">
+                <h3 class="text-xl font-semibold after:content-[''] after:w-full after:bg-black after:h-[3px] after:block after:rounded-full after:mt-2">AMEX EVs</h3>
+                <p class="text-center">AMEX EVs, Inc. is an American multinational automotive and clean energy company headquartered in Austin, Texas. AMEX EVs designs and manufactures electric vehicles and related products and services</p>
+            </div>
+            <div class="md:pl-8">
+                <h3 class="text-xl font-semibold underline mb-4">Our Journey</h3>
+                <p>
+                    2016 - Our Founder, Elon Saluja saw the dream of revolutionizing the electric vehicle industry. <br>
+                    2018 - The First Prototype of our first launched car, MODEL L was presented to the market. <br>
+                    2020 - We launched our second car, MODEL M , which became a great success in a very short period of time. <br>
+                    2021 - AMEX EVs launched it first SUV, MODEL O. <br>
+                    2022 - AMEX EVs launched it second SUV, MODEL A. <br>
+                </p>
+            </div>
         </div>
-        <div>
-            <h2></h2>
-            <div class="flex bg-black flex-col md:flex-row">
-                <img src="" alt="">
-                <div>
-                    <h3></h3>
-                    <p></p>
-                    <p></p>
-                    <a href=""></a>
+        <div class="max-w-[1152px] pb-16">
+            <h2 class="font-bold text-3xl mb-8">OUR TOP PRODUCT THIS MONTH</h2>
+            <div>
+                <div class="p-16 flex bg-black flex-col md:flex-row rounded-lg">
+                    <div class="mx-8 w-1/2"><img src="resources/tesla_top.png" alt="car" class="md:w-full h-full border-2 border-white"></div>
+                    <div class="md:w-1/2 text-white gap-8 flex flex-col gap-4">
+                        <h3 class="text-3xl font-black">MODEL M</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing, elit. Eos, voluptatum dolorum! Laborum blanditiis consequatur, voluptates, sint enim fugiat saepe, dolor fugit, magnam explicabo eaque quas id quo porro dolorum facilis...</p>
+                        <div class="flex gap-4">
+                            <p>$ <span class="text-5xl font-bold">10996</span> .99</p>
+                            <a href="#" class="transition text-black  bg-slate-600 hover:bg-white px-8 rounded-full font-bold flex items-center">Buy Now</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
