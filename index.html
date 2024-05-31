@@ -4,24 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
     <title>AMEX EVs | Home</title>
 </head>
-<body class="m-0 p-4 h-full">
+<style>
+    body {
+        font-family: "Questrial", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+    .h1,h2,h3,h4,.heading {
+        font-family: "Space Grotesk", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+    }
+
+</style>
+<body class="m-0 p-8 h-full ">
     <nav class="relative">
-        <ul class="flex gap-2 absolute right-0">
-            <li><a href="#">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="explore.html">Explore</a></li>
-            <li><a href="contact.html">Contact</a></li>
+        <ul class="flex gap-4 absolute right-0">
+            <li><a href="#" class="hover:bg-gray-900 hover:text-white p-2 rounded-lg">Home</a></li>
+            <li><a href="about.html" class="hover:bg-gray-900 hover:text-white p-2 rounded-lg">About</a></li>
+            <li><a href="explore.html" class="hover:bg-gray-900 hover:text-white p-2 rounded-lg">Explore</a></li>
+            <li><a href="contact.html" class="hover:bg-gray-900 hover:text-white p-2 rounded-lg">Contact</a></li>
         </ul>
     </nav>
     <main class="flex h-full">
-        <div class="stat">
-
+        <div class="bg-gray-200 absolute rounded-2xl p-4 left-24 top-28">
+            <div class="h-[5rem] flex  gap-4 items-center">
+                <img src="resources/car_hero.png" alt="" class="h-full w-[5rem] border-2 border-black rounded-2xl">
+                <div class="flex flex-col">
+                    <h2 class="text-4xl font-semibold">45000</h2>
+                    <p>Cars manufactured this month</p>
+                </div>
+            </div>
         </div>
-        <hero class="m-auto align-self-center flex flex-col gap-4 item-center">
-            <img src="resources/car_hero.png" alt="" class="bg-red-300 p-2 backdrop-blur-sm">
-            <h1 class="text-8xl text-center font-black">AMEX EVs</h1>
+        <div class="bg-gray-200 absolute rounded-2xl p-4  right-16 bottom-56">
+            <div class="h-[5rem] flex  gap-4 items-center">
+                <img src="resources/car_hero.png" alt="" class="h-full w-[5rem] border-2 border-black rounded-2xl">
+                <div class="flex flex-col">
+                    <h2 class="text-4xl font-semibold">20000</h2>
+                    <p>Orders this month</p>
+                </div>
+            </div>
+        </div>
+        <div class="bg-gray-200 absolute rounded-2xl p-4  left-60 bottom-8">
+            <div class="h-[5rem] flex  gap-4 items-center">
+                <img src="resources/car_hero.png" alt="" class="h-full w-[5rem] border-2 border-black rounded-2xl">
+                <div class="flex flex-col">
+                    <h2 class="text-4xl font-semibold">7500</h2>
+                    <p>New customers this month</p>
+                </div>
+            </div>
+        </div>
+        <hero class="m-auto align-self-center flex flex-col items-center relative">
+            <div class="absolute left-8 rounded-full  bg-red-300 w-1/2 h-[277.29px] filter-blur-2xl bottom-[128px] blur-xl"></div>  
+            <div class="absolute right-8 rounded-full  bg-red-300 w-1/2 h-[277.29px] filter-blur-2xl bottom-[128px] blur-xl"></div>  
+            <img src="resources/car_hero.png" alt="" class="p-2 z-50">           
+            <h1 class="text-9xl text-center font-black z-50">AMEX EVs</h1>
             <p class="text-center text-2xl">Now with advanced <span class="text-red-600">autonomous driving</span> technology</p>
         </hero>
     </main>
