@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" class="m-0 h-full w-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <title>AMEX EVs | Explore</title>
+</head>
+<style>
+    body {
+        font-family: "Questrial", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+    h1,h2,.heading {
+        font-family: "Space Grotesk", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+    }
+</style>
+
+<body class="m-0 p-8 h-full w-full">
+    <nav class="relative">
+        <ul class="flex gap-4 absolute right-0">
+            <li><a href="index.html" class="hover:bg-gray-900 hover:text-white p-2 rounded-lg transition">Home</a></li>
+            <li><a href="about.html" class="hover:bg-gray-900 hover:text-white p-2 rounded-lg transition">About</a></li>
+            <li><a href="explore.html" class="hover:bg-gray-900 hover:text-white p-2 rounded-lg transition">Explore</a></li>
+            <li><a href="#" class="hover:bg-gray-900 hover:text-white p-2 rounded-lg transition">Contact</a></li>
+        </ul>
+    </nav>
+    <main class="grid place-items-center h-full">
+        <div>
+            <h1 class="text-4xl font-extrabold">Contact Us</h1>
+            <p>Email us at help@domain.com or message us here:</p>
+            <form action="" class="mt-8 flex flex-col gap-8">
+                <div class="flex gap-8">
+                    <input type="email" placeholder="Your Name" class="border-b border-black outline-0 focus:border-b-2 placeholder:text-gray-500">
+                    <input type="text" placeholder="Your Email" class="border-b border-black outline-0 focus:border-b-2 placeholder:text-gray-500">
+                </div>
+                <textarea placeholder="Your message" class="border-b border-black outline-0 focus:border-b-2 placeholder:text-gray-500" rows="7"></textarea>
+                <button type="submit" class="bg-gray-800 text-white font-semibold text-lg px-8 py-2 rounded-lg hover:bg-black transition">Send Message</button>
+            </form>
+        </div>
+    </main>
+    
+</body>
+</html>
